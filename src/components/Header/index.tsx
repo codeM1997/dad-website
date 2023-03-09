@@ -35,13 +35,13 @@ const Header = () => {
                 <Image src={'tooth-logo.svg'} width={75} height={75} alt='Logo' />
                 <span className='self-center text-primary font-bold text-xl'>{`Dr Mittal's Dental Clinic`}</span>
             </div>
-            <div className='hidden md:flex flex flex-row text-label self-center font-semibold'>
+            <div className='hidden lg:flex flex flex-row text-label self-center font-semibold'>
                 {menuData.map((el: any) => {
-                    return (<div className='p-4 cursor-pointer' onClick={() => router.push(el.path)} key={el.key}>{el.label}</div>)
+                    return (<div className={`p-4 cursor-pointer ${router.pathname === el.path && 'bg-primary rounded-full text-white'}`} onClick={() => router.push(el.path)} key={el.key}>{el.label}</div>)
                 })}
-                <div className='p-4 cursor-pointer bg-primary rounded-full text-white'>{`Call 9810557239`}</div>
+                { router.pathname !== '/contact-us' && <div className='p-4 ml-2 cursor-pointer bg-primary rounded-full text-white'><a href='tel:+917003569494'>{`Call 9810557239`}</a></div>}
             </div>
-            <div className='flex md:hidden  flex flex-row text-label self-center font-semibold mr-4'>
+            <div className='flex lg:hidden  flex flex-row text-label self-center font-semibold mr-4'>
                 <Menu strategy='fixed'>
                     <MenuButton as={IconButton} icon={<HamburgerIcon />}>
 

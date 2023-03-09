@@ -44,7 +44,7 @@ const index = () => {
         </div>
 
       </div>
-      <div className='mt-16 grid grid-cols-2 lg:grid-cols-3'>
+      <div className='mt-16 grid grid-cols-2 lg:grid-cols-3 gap-1 lg:gap-6 p-2'>
           {data.map(el=>{
             return <ServiceCard key={el.heading} icon={el.icon} description={el.description} label={el.heading}/>
           })}

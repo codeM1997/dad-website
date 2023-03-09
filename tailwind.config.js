@@ -6,7 +6,7 @@ module.exports = {
       colors:{
         'retro-white': '#fbfcfb',
         'label': '#a29797',
-        'primary':'#80c890'
+        'primary':'#80c890' //#6667AB
       }
     },
   },
