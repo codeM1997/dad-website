@@ -48,7 +48,7 @@ const Header = () => {
                     </MenuButton>
                     <MenuList>
                         {menuData.map((el: any) => {
-                            return (<MenuItem key={el.label}>{el.label}</MenuItem>)
+                            return (<MenuItem onClick={() => router.push(el.path)} key={el.label}>{el.label}</MenuItem>)
                         })}
 
                     </MenuList>

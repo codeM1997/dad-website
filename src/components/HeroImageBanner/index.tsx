@@ -35,7 +35,7 @@ const HeroImageBanner = () => {
                         <div style={{ width: '80%' }} className='text-label mt-8 break-words text-xl'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod deleniti, suscipit fuga minus rem voluptatum.</div>
                         <div className='p-4 bg-primary inline-block rounded-full text-white mt-8 font-semibold'> Request an appointment</div>
                         <div className='block lg:hidden'>
-                            <div className='p-4 inline-block cursor-pointer bg-teal-500 rounded-full text-white my-4'>{`Call 9810557239`}</div>
+                            <div className='p-4 inline-block cursor-pointer bg-teal-500 rounded-full text-white my-4'><a href='tel:+917003569494'>{`Call 9810557239`}</a></div>
                         </div>
                     </div>
                     <div className='col-span-2 lg:col-span-1 text-label self-center  p-4'>
