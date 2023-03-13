@@ -1,7 +1,8 @@
 import { Button } from '@chakra-ui/react'
 import React from 'react'
 import Image from 'next/image';
-
+import ServicesComponent from '../ServicesComponent';
+import ContactUsComponent from '../ContactUsComponent';
 const HeroImageBanner = () => {
     const articleData = [{
         time: 'Mar 16, 2020',
@@ -48,6 +49,14 @@ const HeroImageBanner = () => {
 
 
             </div>
+            <div className='px-6 lg:px-8'>
+                <div className="mx-auto mt-5 grid max-w-2xl grid-cols-1 gap-y-16 gap-x-8 border-t border-gray-200 pt-10 sm:mt-8 sm:pt-16 lg:mx-0 lg:max-w-none lg:grid-cols-3" />
+                <ServicesComponent />
+            </div>
+            <div className='px-6 lg:px-8'>
+                <div className="mx-auto mt-5 grid max-w-2xl grid-cols-1 gap-y-16 gap-x-8 border-t border-gray-200 pt-10 sm:mt-8 sm:pt-16 lg:mx-0 lg:max-w-none lg:grid-cols-3" />
+                <ContactUsComponent/>
+            </div>
             <div className="py-24 sm:py-32">
                 <div className="mx-auto max-w-7xl px-6 lg:px-8">
                     <div className="mx-auto">
@@ -85,6 +94,8 @@ const HeroImageBanner = () => {
                     </div>
                 </div>
             </div>
+            
+
         </>
 
     )
